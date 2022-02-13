@@ -1,4 +1,4 @@
-![Role tests](https://github.com/akimrx/rfc2_nginx/actions/workflows/ci.yml/badge.svg)
+![Role tests](https://github.com/akimrx/rfc2_myapp/actions/workflows/ci.yml/badge.svg)
 
 Role Name
 =========
