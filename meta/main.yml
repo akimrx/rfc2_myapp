@@ -2,10 +2,13 @@
 dependencies:
   - src: https://github.com/akimrx/rfc2_bootstrap
     version: 1.0.2
+    name: rfc2_bootstrap
   - src: https://github.com/akimrx/rfc2_nginx
     version: 1.0.0
+    name: rfc2_nginx
   - src: https://github.com/akimrx/rfc2_haproxy
     version: 1.0.0
+    name: rfc2_haproxy
 
 galaxy_info:
   author: akimrx
