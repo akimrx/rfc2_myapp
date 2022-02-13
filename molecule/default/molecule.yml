@@ -12,7 +12,6 @@ platforms:
     privileged: true
 scenario:
   test_sequence:
-    - syntax
     - destroy
     - create
     - converge
