@@ -39,6 +39,5 @@ def test_application_is_work(host, role_vars):
     app_http = host.socket(f"tcp://0.0.0.0:{expected_port}")
     assert app_http.is_listening, "App HTTP port is not listening"
 
-    http_response = requests.get(f"http://0.0.0.0:{expected_port}")
-    assert http_response.status_code == 200, "HTTP response status is not equal 200"
-    assert http_response.text == "Hello, World!", "Invalid HTTP response"
+    http_response = host.check_output("curl http://localhost:8080")
+    assert http_response == "Hello, World!", "Invalid HTTP response"

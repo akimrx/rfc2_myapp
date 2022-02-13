@@ -1,0 +1,10 @@
+---
+- name: Prepare tests
+  hosts: all
+  become: true
+  tasks:
+    - name: molecule - install curl
+      apt:
+        name: curl
+        state: present
+        update_cache: yes
