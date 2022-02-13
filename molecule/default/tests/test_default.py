@@ -1,5 +1,4 @@
 import pytest
-import requests
 
 
 @pytest.fixture
