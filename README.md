@@ -12,7 +12,7 @@ See `defaults/main.yml`
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `myaap_port` | `8080` | listening port |
+| `myapp_port` | `8080` | listening port |
 
 
 
