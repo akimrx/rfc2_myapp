@@ -1,0 +1,25 @@
+---
+driver:
+  name: docker
+platforms:
+  - name: ubuntu20
+    image: jrei/systemd-ubuntu:20.04
+    command: /sbin/init
+    capabilities:
+      - SYS_ADMIN
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    privileged: true
+scenario:
+  test_sequence:
+    - syntax
+    - destroy
+    - create
+    - converge
+    - idempotence
+    - verify
+    - destroy
+provisioner:
+  name: ansible
+verifier:
+  name: testinfra

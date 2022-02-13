@@ -1,0 +1,22 @@
+---
+dependencies:
+  - src: https://github.com/akimrx/rfc2_bootstrap
+    version: 1.0.2
+  - src: https://github.com/akimrx/rfc2_nginx
+    version: 1.0.0
+  - src: https://github.com/akimrx/rfc2_haproxy
+    version: 1.0.0
+
+galaxy_info:
+  author: akimrx
+  description: Example myapp
+  company: noname
+  license: license (MIT)
+  min_ansible_version: 2.9
+  platforms:
+  - name: Ubuntu
+    versions:
+    - bionic
+    - focal
+  galaxy_tags:
+    - rfc2_myapp
